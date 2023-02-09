@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(170, 233, 170);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.game_box {
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+h2 {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsteelblue;
+}
+
+.play, .user, .computer, .table {
+    padding-left: 10px;}
+
+.play {
+    height: 10vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 40%;
+}
+
+.play > input[type= 'number'] {
+    height: 70%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.play > input[type= 'button'] {
+    height: 70%;
+    font-weight: 700;
+    margin-left: 5px;
+    width: 20%;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.play > input[type= 'button']:hover {
+    background-color: rgb(113, 210, 113);
+}
+
+.user {
+    height: 10vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 40%;
+}
+
+.user > button {
+    height: 70%;
+    font-weight: 700;
+    margin-left: 5px;
+    width: 20%;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.user > button:hover {
+    background-color: rgb(113, 210, 113);
+}
+
+.computer {
+    height: 10vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 40%;
+}
+
+.table {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.table table {
+  padding: 20px;
+}
+
+.table td {
+  padding: 10px;
+}
