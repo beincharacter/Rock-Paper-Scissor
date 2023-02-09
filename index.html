@@ -1,62 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css">
     <style>
-        table, tr, td {
+        table,
+        tr,
+        td {
             border: 1px solid black;
             border-collapse: collapse;
         }
+
         .a {
             width: 50px;
         }
     </style>
 </head>
+
 <body>
     <div class="main-container">
-        <h2>Rock Paper Scissor</h2>
-        <div class="play">
-            <input type="number" name="noOfTurns" id="turns" data-ns-test="game-number" placeholder="Enter Number of Turns">
-            <input type="button" value="Play" data-ns-test="play-game">
-            <input type="button" value="Reset" class="reset-btn">
+        <div class="game_box">
+            <h2>Rock Paper Scissor</h2>
+            <div class="main_game_box">
+            <div class="main_game_area">
+                <div class="play">
+                    <input type="number" name="noOfTurns" id="turns" data-ns-test="game-number"
+                        placeholder="Enter Number of Turns">
+                    <input type="button" value="Play" data-ns-test="play-game">
+                    <input type="button" value="Reset" class="reset-btn">
+                </div>
+                <div class="user">User Choice :-
+                    <button data-ns-test="rock" class="user-choice" value="rock" disabled>Rock</button>
+                    <button data-ns-test="paper" class="user-choice" value="paper" disabled>Paper</button>
+                    <button data-ns-test="scissors" class="user-choice" value="scissors" disabled>Scissors</button>
+                </div>
+                <div class="computer">Computer Choice:-
+                    <strong data-ns-test="computer-choose"></strong>
+                </div>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <td>User Points: </td>
+                        <td class="a" data-ns-test="user-points"></td>
+                    </tr>
+                    <tr>
+                        <td>Computer Points: </td>
+                        <td class="a" data-ns-test="computer-points"></td>
+                    </tr>
+                    <tr>
+                        <td>Rounds Left:</td>
+                        <td class="a" data-ns-test="rounds-left"></td>
+                    </tr>
+                    <tr>
+                        <td>Round Result:</td>
+                        <td class="a" data-ns-test="round-result"></td>
+                    </tr>
+                    <tr>
+                        <td>Game Result:</td>
+                        <td class="a" data-ns-test="game-result"></td>
+                    </tr>
+                </table>
+            </div></div>
         </div>
-        <div class="user">User Choice:-
-            <button data-ns-test="rock" class="user-choice" value="rock" disabled>rock</button>
-            <button data-ns-test="paper" class="user-choice" value="paper" disabled>paper</button>
-            <button data-ns-test="scissors" class="user-choice" value="scissors" disabled>scissors</button>
-        </div>
-        <div class="computer" >Computer Choice:- 
-            <strong data-ns-test="computer-choose"></strong>
-        </div>
-        <div class="table">
-        <table>
-            <tr>
-                <td>User Points: </td>
-                <td class="a" data-ns-test="user-points"></td>
-            </tr>
-            <tr>
-                <td>Computer Points: </td>
-                <td class="a" data-ns-test="computer-points"></td>
-            </tr>
-            <tr>
-                <td>Rounds Left:</td>
-                <td class="a" data-ns-test="rounds-left"></td>
-            </tr>
-            <tr>
-                <td>Round Result:</td>
-                <td class="a" data-ns-test="round-result"></td>
-            </tr>
-            <tr>
-                <td>Game Result:</td>
-                <td class="a" data-ns-test="game-result"></td>
-            </tr>
-        </table>
-        </div>
-
-    </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
+
 </html>
