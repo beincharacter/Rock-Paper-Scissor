@@ -21,6 +21,8 @@ playbtn.addEventListener("click",()=>{
     compPoints.innerText = 0;
     roundResult.innerText ='';
     gameResult.innerText = '';
+
+    playbtn.setAttribute('disable', true)
     }
 })
 btn.forEach(e => {
