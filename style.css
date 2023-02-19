@@ -41,14 +41,14 @@ h2 {
 }
 
 .play, .user, .computer, .table {
-    padding-left: 10px;}
+    padding-left: 10px;
+}
 
 .play {
-    height: 10vh;
+    padding: 10px;
     display: flex;
-    /* justify-content: center; */
+    flex-wrap: wrap;
     align-items: center;
-    width: 40%;
 }
 
 .play > input[type= 'number'] {
@@ -59,10 +59,10 @@ h2 {
 }
 
 .play > input[type= 'button'] {
-    height: 70%;
     font-weight: 700;
-    margin-left: 5px;
-    width: 20%;
+    margin: .5rem;
+    padding: .5rem;
+    min-width: 90px;
     border-radius: 5px;
     background-color: transparent;
     cursor: pointer;
@@ -73,23 +73,19 @@ h2 {
 }
 
 .user {
-    height: 10vh;
     display: flex;
-    /* justify-content: center; */
+    flex-wrap: wrap;
     align-items: center;
-    width: 40%;
 }
 
 .user > button {
-    height: 70%;
     font-weight: 700;
-    margin-left: 5px;
-    width: 20%;
+    margin: .5rem;
+    padding: .5rem;
+    min-width: 90px;
     border-radius: 5px;
     background-color: transparent;
-    color: white;
     cursor: pointer;
-
 }
 
 .user > button:hover {
@@ -97,11 +93,9 @@ h2 {
 }
 
 .computer {
-    height: 10vh;
     display: flex;
-    /* justify-content: center; */
+    padding: .5rem;
     align-items: center;
-    width: 40%;
 }
 
 .table {
